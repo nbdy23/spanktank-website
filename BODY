@@ -1,106 +1,813 @@
 ## LAYOUT BASIC ARCHITECURE
-## CSS
+## EXAMPLE
 
 
-/* Reset margins and paddings for a clean slate */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+<main id="page" class="container" role="main">
+        
+          
+<article class="sections" id="sections" data-page-sections="65ea1cd16565947a312e254d">
+<section data-test="page-section" data-section-theme="" class="page-section 
+      full-bleed-section
+      layout-engine-section
+    background-width--full-bleed
+      section-height--medium
+      content-width--wide
+    horizontaL-alignment--center
+    vertical-alignment--middle
+    " data-section-id="65f0cbf4ab820b1e6a875066" data-controller="SectionWrapperController" data-current-styles="{
+&quot;imageOverlayOpacity&quot;: 0.15,
+&quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
+&quot;sectionHeight&quot;: &quot;section-height--medium&quot;,
+&quot;customSectionHeight&quot;: 10,
+&quot;horizontalAlignment&quot;: &quot;horizontal-alignment--center&quot;,
+&quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
+&quot;contentWidth&quot;: &quot;content-width--wide&quot;,
+&quot;customContentWidth&quot;: 50,
+&quot;backgroundColor&quot;: &quot;&quot;,
+&quot;sectionTheme&quot;: &quot;&quot;,
+&quot;sectionAnimation&quot;: &quot;none&quot;,
+&quot;backgroundMode&quot;: &quot;image&quot;
+}" data-current-context="{
+&quot;video&quot;: null,
+&quot;backgroundImageId&quot;: null,
+&quot;backgroundMediaEffect&quot;: null,
+&quot;divider&quot;: null,
+&quot;typeName&quot;: &quot;page&quot;
+}" data-animation="none" data-fluid-engine-section="" data-controllers-bound="SectionWrapperController" style="padding-top: 0px;" id="yui_3_17_2_1_1739923397226_75" data-active="true">
+  <div class="section-border">
+    <div class="section-background">
+    </div>
+  </div>
+  <div class="content-wrapper" style="
+    " id="yui_3_17_2_1_1739923397226_74">
+    <div class="content" id="yui_3_17_2_1_1739923397226_73">
+      <div data-fluid-engine="true" id="yui_3_17_2_1_1739923397226_72"><style>
+.fe-65f0cbf4ab820b1e6a875065 {
+  --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px);
+  --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 );
+  display: grid;
+  position: relative;
+  grid-area: 1/1/-1/-1;
+  grid-template-rows: repeat(73,minmax(24px, auto));
+  grid-template-columns:
+    minmax(var(--grid-gutter), 1fr)
+    repeat(8, minmax(0, var(--cell-max-width)))
+    minmax(var(--grid-gutter), 1fr);
+  row-gap: 11.0px;
+  column-gap: 11.0px;
+}
+@media (min-width: 768px) {
+  .background-width--inset .fe-65f0cbf4ab820b1e6a875065 {
+    --inset-padding: calc(var(--sqs-site-gutter) * 2);
+  }
+  .fe-65f0cbf4ab820b1e6a875065 {
+    --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px);
+    --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 );
+    --inset-padding: 0vw;
+
+    --row-height-scaling-factor: 0.0215;
+    --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) ));
+
+    grid-template-rows: repeat(38,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto));
+    grid-template-columns:
+      minmax(var(--grid-gutter), 1fr)
+      repeat(24, minmax(0, var(--cell-max-width)))
+      minmax(var(--grid-gutter), 1fr);
+  }
+}
+  .fe-block-yui_3_17_2_1_1710264938662_16057 {
+    grid-area: 1/2/7/7;
+    z-index: 4;
+
+    @media (max-width: 767px) {
+    }
+  }
+
+  .fe-block-yui_3_17_2_1_1710264938662_16057 .sqs-block {
+    justify-content: center;
+  }
+
+  .fe-block-yui_3_17_2_1_1710264938662_16057 .sqs-block-alignment-wrapper {
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .fe-block-yui_3_17_2_1_1710264938662_16057 {
+      grid-area: 1/8/2/9;
+      z-index: 4;
+    }
+    .fe-block-yui_3_17_2_1_1710264938662_16057 .sqs-block {
+      justify-content: center;
+    }
+    .fe-block-yui_3_17_2_1_1710264938662_16057 .sqs-block-alignment-wrapper {
+      align-items: center;
+    }
+  }
+  .fe-block-yui_3_17_2_1_1710264938662_10401 {
+    grid-area: 7/5/9/10;
+    z-index: 3;
+
+    @media (max-width: 767px) {
+    }
+  }
+  .fe-block-yui_3_17_2_1_1710264938662_10401 .sqs-block {
+    justify-content: flex-start;
+  }
+  .fe-block-yui_3_17_2_1_1710264938662_10401 .sqs-block-alignment-wrapper {
+    align-items: flex-start;
+  }
+
+  @media (min-width: 768px) {
+    .fe-block-yui_3_17_2_1_1710264938662_10401 {
+      grid-area: 1/9/3/15;
+      z-index: 3;
+    }
+    .fe-block-yui_3_17_2_1_1710264938662_10401 .sqs-block {
+      justify-content: flex-start;
+    }
+    .fe-block-yui_3_17_2_1_1710264938662_10401 .sqs-block-alignment-wrapper {
+      align-items: flex-start;
+    }
+  }
+  .fe-block-yui_3_17_2_1_1710264938662_22471 {
+    grid-area: 7/2/9/5;
+    z-index: 5;
+
+    @media (max-width: 767px) {
+    }
+  }
+  .fe-block-yui_3_17_2_1_1710264938662_22471 .sqs-block {
+    justify-content: flex-start;
+  }
+  .fe-block-yui_3_17_2_1_1710264938662_22471 .sqs-block-alignment-wrapper {
+    align-items: flex-start;
+  }
+
+  @media (min-width: 768px) {
+    .fe-block-yui_3_17_2_1_1710264938662_22471 {
+      grid-area: 1/4/3/8;
+      z-index: 5;
+    }
+    .fe-block-yui_3_17_2_1_1710264938662_22471 .sqs-block {
+      justify-content: flex-start;
+    }
+    .fe-block-yui_3_17_2_1_1710264938662_22471 .sqs-block-alignment-wrapper {
+      align-items: flex-start;
+    }
+  }
+  .fe-block-yui_3_17_2_1_1710264938662_35486 {
+    grid-area: 9/2/11/10;
+    z-index: 6;
+
+    @media (max-width: 767px) {
+    }
+  }
+  .fe-block-yui_3_17_2_1_1710264938662_35486 .sqs-block {
+    justify-content: flex-start;
+  }
+  .fe-block-yui_3_17_2_1_1710264938662_35486 .sqs-block-alignment-wrapper {
+    align-items: flex-start;
+  }
+
+  @media (min-width: 768px) {
+    .fe-block-yui_3_17_2_1_1710264938662_35486 {
+      grid-area: 2/8/4/23;
+      z-index: 6;
+    }
+    .fe-block-yui_3_17_2_1_1710264938662_35486 .sqs-block {
+      justify-content: flex-start;
+    }
+    .fe-block-yui_3_17_2_1_1710264938662_35486 .sqs-block-alignment-wrapper {
+      align-items: flex-start;
+    }
+  }
+  .fe-block-85310ae98915ed0d751e {
+    grid-area: 11/2/74/10;
+    z-index: 1;
+
+    @media (max-width: 767px) {
+    }
+  }
+  .fe-block-85310ae98915ed0d751e .sqs-block {
+    justify-content: flex-start;
+  }
+  .fe-block-85310ae98915ed0d751e .sqs-block-alignment-wrapper {
+    align-items: flex-start;
+  }
+
+  @media (min-width: 768px) {
+    .fe-block-85310ae98915ed0d751e {
+      grid-area: 4/4/39/22;
+      z-index: 1;
+    }
+    .fe-block-85310ae98915ed0d751e .sqs-block {
+      justify-content: flex-start;
+    }
+    .fe-block-85310ae98915ed0d751e .sqs-block-alignment-wrapper {
+      align-items: flex-start;
+    }
+  }
+</style><div class="fluid-engine fe-65f0cbf4ab820b1e6a875065" id="yui_3_17_2_1_1739923397226_71"><div class="fe-block fe-block-yui_3_17_2_1_1710264938662_16057" id="yui_3_17_2_1_1739923397226_70"><div class="sqs-block image-block sqs-block-image sqs-stretched sqs-text-ready" data-block-type="5" id="block-yui_3_17_2_1_1710264938662_16057"><div class="sqs-block-content" id="yui_3_17_2_1_1739923397226_69" style="height: 100%; width: 100%;">
+
+
+
+  
+    <div class="image-block-outer-wrapper layout-caption-below design-layout-fluid image-position-center combination-animation-site-default individual-animation-site-default sqs-narrow-width animation-loaded" data-test="image-block-fluid-outer-wrapper" id="yui_3_17_2_1_1739923397226_68">
+      <div class="fluid-image-animation-wrapper sqs-image sqs-block-alignment-wrapper" data-animation-role="image" id="yui_3_17_2_1_1739923397226_67">
+        <div class="fluid-image-container sqs-image-content" style="overflow: hidden; mask-image: -webkit-radial-gradient(center, white, black); position: relative; width: 21px; height: 100%;" id="yui_3_17_2_1_1739923397226_66">
+          
+
+              <div class="content-fit" id="yui_3_17_2_1_1739923397226_65">
+                
+            
+            <img data-stretch="false" data-src="https://images.squarespace-cdn.com/content/v1/65ea1cb3529ccd1a677e7d09/8bbfcc53-e05b-457c-88e1-06c8a99eac9e/dragonball-tenkaichi-daibouken_400x400.jpg" data-image="https://images.squarespace-cdn.com/content/v1/65ea1cb3529ccd1a677e7d09/8bbfcc53-e05b-457c-88e1-06c8a99eac9e/dragonball-tenkaichi-daibouken_400x400.jpg" data-image-dimensions="400x400" data-image-focal-point="0.5,0.5" alt="" data-load="false" elementtiming="system-image-block" src="https://images.squarespace-cdn.com/content/v1/65ea1cb3529ccd1a677e7d09/8bbfcc53-e05b-457c-88e1-06c8a99eac9e/dragonball-tenkaichi-daibouken_400x400.jpg" width="400" height="400" sizes="(max-width: 640px) 100vw, (max-width: 767px) 62.5vw, 4.166666666666666vw" style="display:block;object-fit: contain; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/65ea1cb3529ccd1a677e7d09/8bbfcc53-e05b-457c-88e1-06c8a99eac9e/dragonball-tenkaichi-daibouken_400x400.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/65ea1cb3529ccd1a677e7d09/8bbfcc53-e05b-457c-88e1-06c8a99eac9e/dragonball-tenkaichi-daibouken_400x400.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/65ea1cb3529ccd1a677e7d09/8bbfcc53-e05b-457c-88e1-06c8a99eac9e/dragonball-tenkaichi-daibouken_400x400.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/65ea1cb3529ccd1a677e7d09/8bbfcc53-e05b-457c-88e1-06c8a99eac9e/dragonball-tenkaichi-daibouken_400x400.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/65ea1cb3529ccd1a677e7d09/8bbfcc53-e05b-457c-88e1-06c8a99eac9e/dragonball-tenkaichi-daibouken_400x400.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/65ea1cb3529ccd1a677e7d09/8bbfcc53-e05b-457c-88e1-06c8a99eac9e/dragonball-tenkaichi-daibouken_400x400.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/65ea1cb3529ccd1a677e7d09/8bbfcc53-e05b-457c-88e1-06c8a99eac9e/dragonball-tenkaichi-daibouken_400x400.jpg?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+
+            
+            <div class="fluidImageOverlay"></div>
+          
+              </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .sqs-block-image .sqs-block-content {
+        height: 100%;
+        width: 100%;
+      }
+        .fe-block-yui_3_17_2_1_1710264938662_16057 .fluidImageOverlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          mix-blend-mode: normal;
+            opacity: 0;
+        }
+
+    </style>
+</div></div></div><div class="fe-block fe-block-yui_3_17_2_1_1710264938662_10401" style="mix-blend-mode: normal;"><div class="sqs-block html-block sqs-block-html" data-blend-mode="NORMAL" data-block-type="2" data-border-radii="{&quot;topLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;topRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0}}" id="block-yui_3_17_2_1_1710264938662_10401"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <p class="sqsrte-small" style="white-space:pre-wrap;">(<a href="https://twitter.com/eladgil" target="_blank">Twitter</a>, <a href="https://blog.eladgil.com/" target="_blank">Writing</a>, <a href="https://www.amazon.com/High-Growth-Handbook-Elad-Gil/dp/1732265100" target="_blank">Book</a>)</p>
+</div>
+
+
+</div></div></div><div class="fe-block fe-block-yui_3_17_2_1_1710264938662_22471" style="mix-blend-mode: normal;"><div class="sqs-block html-block sqs-block-html" data-blend-mode="NORMAL" data-block-type="2" data-border-radii="{&quot;topLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;topRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0}}" id="block-yui_3_17_2_1_1710264938662_22471"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h2 style="white-space:pre-wrap;">Elad Gil</h2>
+</div>
+
+</div></div></div><div class="fe-block fe-block-yui_3_17_2_1_1710264938662_35486" style="mix-blend-mode: normal;"><div class="sqs-block html-block sqs-block-html" data-blend-mode="NORMAL" data-block-type="2" data-border-radii="{&quot;topLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;topRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0}}" id="block-yui_3_17_2_1_1710264938662_35486"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <p class="" style="white-space:pre-wrap;"><strong>Technology entrepreneur, investor, &amp; future forward optimist</strong></p>
+</div>
+
+
+</div></div></div><div class="fe-block fe-block-85310ae98915ed0d751e" style="mix-blend-mode: normal;"><div class="sqs-block html-block sqs-block-html" data-blend-mode="NORMAL" data-block-type="2" data-border-radii="{&quot;topLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;topRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0}}" id="block-85310ae98915ed0d751e"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <p class="sqsrte-small" style="white-space:pre-wrap;"><em>I have been working on a series of investments, incubations, and operating companies focused on the technology future.</em></p><p class="sqsrte-small" style="white-space:pre-wrap;"><strong>Entrepreneurship &amp; running companies.</strong></p><ul data-rte-list="default"><li><p class="sqsrte-small" style="white-space:pre-wrap;">Started two companies (Mixerlabs - bought by Twitter - and Color Health)</p></li><li><p class="sqsrte-small" style="white-space:pre-wrap;">Recently incubated / helped start <a href="https://braintrustdata.com" target="_blank">Braintrust</a>, an AI eval (and more!) company</p></li><li><p class="sqsrte-small" style="white-space:pre-wrap;">Was a VP at Twitter (which bought a startup where I was CEO) and worked on AI &amp; mobile at Google</p></li></ul><p class="sqsrte-small" style="white-space:pre-wrap;">I also wrote the best-selling <a href="https://www.amazon.com/High-Growth-Handbook-Elad-Gil/dp/1732265100" target="_blank"><strong>High Growth Handbook</strong></a> - tactical advice for post-product market fit companies (hiring, product, M&amp;A, sales, HR issues, fundraises etc). You can buy the book on <a href="https://www.amazon.com/High-Growth-Handbook-Elad-Gil/dp/1732265100" target="_blank">Amazon</a> or read for <a href="https://growth.eladgil.com/book/introduction/welcome-to-the-high-growth-handbook/" target="_blank">free online</a></p><p class="sqsrte-small" style="white-space:pre-wrap;"><strong>Investing</strong>. Past investments include:&nbsp;</p><ul data-rte-list="default"><li><p class="sqsrte-small" style="white-space:pre-wrap;">Airbnb, Airtable, Anduril, Applied Intuition, Brex, Checkr, Coinbase, dbt Labs, Deel, Figma, Flexport, Gitlab, Gusto, Instacart, Navan, Notion, Opendoor, PagerDuty, Pinterest, Retool, Rippling, Samsara, Square, Stripe etc</p></li></ul><p class="sqsrte-small" style="white-space:pre-wrap;"><strong>AI.</strong> I got involved with ML &amp; generative AI early.</p><ul data-rte-list="default"><li><p class="sqsrte-small" style="white-space:pre-wrap;">I invested early in, or led rounds for e.g. <a href="https://www.braintrustdata.com/" target="_blank">Braintrust</a>, Character, Decagon, <a href="https://www.harvey.ai/blog/series-b" target="_blank">Harvey</a>, Mistral, <a href="https://www.perplexity.ai/" target="_blank">Perplexity</a>, Pika, and others</p></li><li><p class="sqsrte-small" style="white-space:pre-wrap;">I prior ran AI centric product orgs at Google &amp; Twitter </p></li><li><p class="sqsrte-small" style="white-space:pre-wrap;">I have an AI podcast named <a href="https://www.youtube.com/playlist?list=PLMKa0PxGwad7jf8hwwX8w5FHitXZ1L_h1" target="_blank">No Priors</a></p></li></ul><p class="sqsrte-small" style="white-space:pre-wrap;"><strong>Longevity. </strong>I have degrees in Math and Biology (including a PhD from MIT) and have seen existence proofs of <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3001308/" target="_blank">life extension in organisms due to gene knockouts</a></p><ul data-rte-list="default"><li><p class="sqsrte-small" style="white-space:pre-wrap;">I personally identified a <a href="https://pubmed.ncbi.nlm.nih.gov/10077613/" target="_blank">gene involved in lifespan</a></p></li><li><p class="sqsrte-small" style="white-space:pre-wrap;">I have also funded a clinical trial at Stanford on aging (it didnt work! DOH! Happy to try again)</p></li><li><p class="sqsrte-small" style="white-space:pre-wrap;"><strong> </strong>Involved with anti-aging biotech companies (<a href="https://bioagelabs.com/" target="_blank">BioAge</a> and <a href="https://www.newlimit.com/" target="_blank">NewLimit</a>). BioAge now has an interesting drug for <a href="https://www.clinicaltrialsarena.com/news/bioage-labs-muscle-atrophy/" target="_blank">muscle</a></p></li></ul><p class="sqsrte-small" style="white-space:pre-wrap;"><strong>Beauty &amp; inspiration. </strong>Thinking about society-level beauty and inspirations at Monumental (coming soon!). Why don’t we build massive inspiring monuments and art projects anymore that can inspire people to do amazing things? Belief in progress is reflective.</p><p class="sqsrte-small" style="white-space:pre-wrap;"><strong>Human capital movements.</strong> The drain from key parts of society of smart, young, high conviction people is starting to show its impact. Am interested in projects to encourage really smart people to work in societally important fields which currently lack smart people.</p><p class="sqsrte-small" style="white-space:pre-wrap;"><strong>Projects I need help with:</strong> Monumental (coming soon!), a chain of new K-12 schools inspired by ancient Greece, two new foundation models I want to exist.</p><p class="sqsrte-small" style="white-space:pre-wrap;"><strong>Where you can find me.</strong> <a href="https://twitter.com/eladgil" target="_blank">Twitter</a>, <a href="https://blog.eladgil.com/" target="_blank">Writings</a>, <a href="https://growth.eladgil.com/" target="_blank">Book</a></p><p class="sqsrte-small" style="white-space:pre-wrap;"><strong>Media assets.</strong> Download an official headshot of me <a href="https://twitter.com/eladgil/photo" target="_blank">here</a></p>
+</div>
+
+
+</div></div></div></div></div>
+    </div>
+  
+  </div>
+  
+</section>
+
+  
+</article>
+
+        
+      </main>
+
+
+<main id="page" class="container" role="main">
+        
+          
+<article class="sections" id="sections" data-page-sections="65ea1cd16565947a312e254d">
+  
+
+<section data-test="page-section" data-section-theme="" class="page-section 
+    
+      full-bleed-section
+      layout-engine-section
+    
+    background-width--full-bleed
+    
+      section-height--medium
+    
+    
+      content-width--wide
+    
+    horizontal-alignment--center
+    vertical-alignment--middle
+    
+   
+    " data-section-id="65f0cbf4ab820b1e6a875066" data-controller="SectionWrapperController" data-current-styles="{
+&quot;imageOverlayOpacity&quot;: 0.15,
+&quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
+&quot;sectionHeight&quot;: &quot;section-height--medium&quot;,
+&quot;customSectionHeight&quot;: 10,
+&quot;horizontalAlignment&quot;: &quot;horizontal-alignment--center&quot;,
+&quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
+&quot;contentWidth&quot;: &quot;content-width--wide&quot;,
+&quot;customContentWidth&quot;: 50,
+&quot;backgroundColor&quot;: &quot;&quot;,
+&quot;sectionTheme&quot;: &quot;&quot;,
+&quot;sectionAnimation&quot;: &quot;none&quot;,
+&quot;backgroundMode&quot;: &quot;image&quot;
+}" data-current-context="{
+&quot;video&quot;: null,
+&quot;backgroundImageId&quot;: null,
+&quot;backgroundMediaEffect&quot;: null,
+&quot;divider&quot;: null,
+&quot;typeName&quot;: &quot;page&quot;
+}" data-animation="none" data-fluid-engine-section="" data-controllers-bound="SectionWrapperController" style="padding-top: 0px;" id="yui_3_17_2_1_1739923397226_75" data-active="true">
+  <div class="section-border">
+    <div class="section-background">
+    
+      
+    
+    </div>
+  </div>
+  <div class="content-wrapper" style="
+      
+        
+      
+    " id="yui_3_17_2_1_1739923397226_74">
+    <div class="content" id="yui_3_17_2_1_1739923397226_73">
+       
+      
+      <div data-fluid-engine="true" id="yui_3_17_2_1_1739923397226_72"><style>
+
+.fe-65f0cbf4ab820b1e6a875065 {
+  --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px);
+  --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 );
+
+  display: grid;
+  position: relative;
+  grid-area: 1/1/-1/-1;
+  grid-template-rows: repeat(73,minmax(24px, auto));
+  grid-template-columns:
+    minmax(var(--grid-gutter), 1fr)
+    repeat(8, minmax(0, var(--cell-max-width)))
+    minmax(var(--grid-gutter), 1fr);
+  row-gap: 11.0px;
+  column-gap: 11.0px;
 }
 
-/* Body and general styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4; /* Light gray background */
-    color: #333; /* Dark text color */
+@media (min-width: 768px) {
+  .background-width--inset .fe-65f0cbf4ab820b1e6a875065 {
+    --inset-padding: calc(var(--sqs-site-gutter) * 2);
+  }
+
+  .fe-65f0cbf4ab820b1e6a875065 {
+    --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px);
+    --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 );
+    --inset-padding: 0vw;
+
+    --row-height-scaling-factor: 0.0215;
+    --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) ));
+
+    grid-template-rows: repeat(38,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto));
+    grid-template-columns:
+      minmax(var(--grid-gutter), 1fr)
+      repeat(24, minmax(0, var(--cell-max-width)))
+      minmax(var(--grid-gutter), 1fr);
+  }
 }
 
-/* Container to center content */
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
 
-/* Header styling */
-header {
-    background-color: #333; /* Dark background */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
+  .fe-block-yui_3_17_2_1_1710264938662_16057 {
+    grid-area: 1/2/7/7;
+    z-index: 4;
 
-header h1 a {
-    color: white;
-    text-decoration: none;
-    font-size: 2.5em;
-}
+    @media (max-width: 767px) {
+      
+        
+      
+    }
+  }
 
-header nav ul {
-    list-style-type: none;
-    margin-top: 10px;
-    padding: 0;
-}
+  .fe-block-yui_3_17_2_1_1710264938662_16057 .sqs-block {
+    justify-content: center;
+  }
 
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+  .fe-block-yui_3_17_2_1_1710264938662_16057 .sqs-block-alignment-wrapper {
+    align-items: center;
+  }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-}
+  @media (min-width: 768px) {
+    .fe-block-yui_3_17_2_1_1710264938662_16057 {
+      grid-area: 1/8/2/9;
+      z-index: 4;
 
-header nav ul li a:hover {
-    color: #ff6347; /* Highlight color */
-}
+      
+        
+      
+    }
 
-/* Section styling */
-section {
-    padding: 50px 0;
-    background-color: #fff; /* White background for sections */
-    margin-bottom: 20px;
-}
+    .fe-block-yui_3_17_2_1_1710264938662_16057 .sqs-block {
+      justify-content: center;
+    }
 
-section h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
+    .fe-block-yui_3_17_2_1_1710264938662_16057 .sqs-block-alignment-wrapper {
+      align-items: center;
+    }
+  }
 
-section p {
-    text-align: center;
-    font-size: 1.1em;
-}
+  .fe-block-yui_3_17_2_1_1710264938662_10401 {
+    grid-area: 7/5/9/10;
+    z-index: 3;
 
-/* Portfolio Projects Layout */
-.projects {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    margin-top: 20px;
-}
+    @media (max-width: 767px) {
+      
+        
+      
+    }
+  }
 
-.project {
-    background-color: #f1f1f1;
-    padding: 20px;
-    width: 45%;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+  .fe-block-yui_3_17_2_1_1710264938662_10401 .sqs-block {
+    justify-content: flex-start;
+  }
 
-.project h3 {
-    margin-bottom: 10px;
-    color: #333;
-}
+  .fe-block-yui_3_17_2_1_1710264938662_10401 .sqs-block-alignment-wrapper {
+    align-items: flex-start;
+  }
 
-/* Footer Styling */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
+  @media (min-width: 768px) {
+    .fe-block-yui_3_17_2_1_1710264938662_10401 {
+      grid-area: 1/9/3/15;
+      z-index: 3;
+
+      
+        
+      
+    }
+
+    .fe-block-yui_3_17_2_1_1710264938662_10401 .sqs-block {
+      justify-content: flex-start;
+    }
+
+    .fe-block-yui_3_17_2_1_1710264938662_10401 .sqs-block-alignment-wrapper {
+      align-items: flex-start;
+    }
+  }
+
+  .fe-block-yui_3_17_2_1_1710264938662_22471 {
+    grid-area: 7/2/9/5;
+    z-index: 5;
+
+    @media (max-width: 767px) {
+      
+        
+      
+    }
+  }
+
+  .fe-block-yui_3_17_2_1_1710264938662_22471 .sqs-block {
+    justify-content: flex-start;
+  }
+
+  .fe-block-yui_3_17_2_1_1710264938662_22471 .sqs-block-alignment-wrapper {
+    align-items: flex-start;
+  }
+
+  @media (min-width: 768px) {
+    .fe-block-yui_3_17_2_1_1710264938662_22471 {
+      grid-area: 1/4/3/8;
+      z-index: 5;
+
+      
+        
+      
+    }
+
+    .fe-block-yui_3_17_2_1_1710264938662_22471 .sqs-block {
+      justify-content: flex-start;
+    }
+
+    .fe-block-yui_3_17_2_1_1710264938662_22471 .sqs-block-alignment-wrapper {
+      align-items: flex-start;
+    }
+  }
+
+  .fe-block-yui_3_17_2_1_1710264938662_35486 {
+    grid-area: 9/2/11/10;
+    z-index: 6;
+
+    @media (max-width: 767px) {
+      
+        
+      
+    }
+  }
+
+  .fe-block-yui_3_17_2_1_1710264938662_35486 .sqs-block {
+    justify-content: flex-start;
+  }
+
+  .fe-block-yui_3_17_2_1_1710264938662_35486 .sqs-block-alignment-wrapper {
+    align-items: flex-start;
+  }
+
+  @media (min-width: 768px) {
+    .fe-block-yui_3_17_2_1_1710264938662_35486 {
+      grid-area: 2/8/4/23;
+      z-index: 6;
+
+      
+        
+      
+    }
+
+    .fe-block-yui_3_17_2_1_1710264938662_35486 .sqs-block {
+      justify-content: flex-start;
+    }
+
+    .fe-block-yui_3_17_2_1_1710264938662_35486 .sqs-block-alignment-wrapper {
+      align-items: flex-start;
+    }
+  }
+
+  .fe-block-85310ae98915ed0d751e {
+    grid-area: 11/2/74/10;
+    z-index: 1;
+
+    @media (max-width: 767px) {
+      
+        
+      
+    }
+  }
+
+  .fe-block-85310ae98915ed0d751e .sqs-block {
+    justify-content: flex-start;
+  }
+
+  .fe-block-85310ae98915ed0d751e .sqs-block-alignment-wrapper {
+    align-items: flex-start;
+  }
+
+  @media (min-width: 768px) {
+    .fe-block-85310ae98915ed0d751e {
+      grid-area: 4/4/39/22;
+      z-index: 1;
+
+      
+        
+      
+    }
+
+    .fe-block-85310ae98915ed0d751e .sqs-block {
+      justify-content: flex-start;
+    }
+
+    .fe-block-85310ae98915ed0d751e .sqs-block-alignment-wrapper {
+      align-items: flex-start;
+    }
+  }
+
+</style><div class="fluid-engine fe-65f0cbf4ab820b1e6a875065" id="yui_3_17_2_1_1739923397226_71"><div class="fe-block fe-block-yui_3_17_2_1_1710264938662_16057" id="yui_3_17_2_1_1739923397226_70"><div class="sqs-block image-block sqs-block-image sqs-stretched sqs-text-ready" data-block-type="5" id="block-yui_3_17_2_1_1710264938662_16057"><div class="sqs-block-content" id="yui_3_17_2_1_1739923397226_69" style="height: 100%; width: 100%;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="image-block-outer-wrapper layout-caption-below design-layout-fluid image-position-center combination-animation-site-default individual-animation-site-default sqs-narrow-width animation-loaded" data-test="image-block-fluid-outer-wrapper" id="yui_3_17_2_1_1739923397226_68">
+      <div class="fluid-image-animation-wrapper sqs-image sqs-block-alignment-wrapper" data-animation-role="image" id="yui_3_17_2_1_1739923397226_67">
+        <div class="fluid-image-container sqs-image-content" style="overflow: hidden; mask-image: -webkit-radial-gradient(center, white, black); position: relative; width: 21px; height: 100%;" id="yui_3_17_2_1_1739923397226_66">
+          
+
+          
+          
+
+          
+            
+              <div class="content-fit" id="yui_3_17_2_1_1739923397226_65">
+                
+            
+            
+            
+            
+            
+            
+            <img data-stretch="false" data-src="https://images.squarespace-cdn.com/content/v1/65ea1cb3529ccd1a677e7d09/8bbfcc53-e05b-457c-88e1-06c8a99eac9e/dragonball-tenkaichi-daibouken_400x400.jpg" data-image="https://images.squarespace-cdn.com/content/v1/65ea1cb3529ccd1a677e7d09/8bbfcc53-e05b-457c-88e1-06c8a99eac9e/dragonball-tenkaichi-daibouken_400x400.jpg" data-image-dimensions="400x400" data-image-focal-point="0.5,0.5" alt="" data-load="false" elementtiming="system-image-block" src="https://images.squarespace-cdn.com/content/v1/65ea1cb3529ccd1a677e7d09/8bbfcc53-e05b-457c-88e1-06c8a99eac9e/dragonball-tenkaichi-daibouken_400x400.jpg" width="400" height="400" sizes="(max-width: 640px) 100vw, (max-width: 767px) 62.5vw, 4.166666666666666vw" style="display:block;object-fit: contain; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/65ea1cb3529ccd1a677e7d09/8bbfcc53-e05b-457c-88e1-06c8a99eac9e/dragonball-tenkaichi-daibouken_400x400.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/65ea1cb3529ccd1a677e7d09/8bbfcc53-e05b-457c-88e1-06c8a99eac9e/dragonball-tenkaichi-daibouken_400x400.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/65ea1cb3529ccd1a677e7d09/8bbfcc53-e05b-457c-88e1-06c8a99eac9e/dragonball-tenkaichi-daibouken_400x400.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/65ea1cb3529ccd1a677e7d09/8bbfcc53-e05b-457c-88e1-06c8a99eac9e/dragonball-tenkaichi-daibouken_400x400.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/65ea1cb3529ccd1a677e7d09/8bbfcc53-e05b-457c-88e1-06c8a99eac9e/dragonball-tenkaichi-daibouken_400x400.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/65ea1cb3529ccd1a677e7d09/8bbfcc53-e05b-457c-88e1-06c8a99eac9e/dragonball-tenkaichi-daibouken_400x400.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/65ea1cb3529ccd1a677e7d09/8bbfcc53-e05b-457c-88e1-06c8a99eac9e/dragonball-tenkaichi-daibouken_400x400.jpg?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+
+            
+              
+            
+            <div class="fluidImageOverlay"></div>
+          
+              </div>
+            
+          
+
+        </div>
+      </div>
+    </div>
+    <style>
+      .sqs-block-image .sqs-block-content {
+        height: 100%;
+        width: 100%;
+      }
+
+      
+        .fe-block-yui_3_17_2_1_1710264938662_16057 .fluidImageOverlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          mix-blend-mode: normal;
+          
+            
+            
+          
+          
+            opacity: 0;
+          
+        }
+      
+    </style>
+  
+
+
+  
+
+
+</div></div></div><div class="fe-block fe-block-yui_3_17_2_1_1710264938662_10401" style="mix-blend-mode: normal;"><div class="sqs-block html-block sqs-block-html" data-blend-mode="NORMAL" data-block-type="2" data-border-radii="{&quot;topLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;topRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0}}" id="block-yui_3_17_2_1_1710264938662_10401"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <p class="sqsrte-small" style="white-space:pre-wrap;">(<a href="https://twitter.com/eladgil" target="_blank">Twitter</a>, <a href="https://blog.eladgil.com/" target="_blank">Writing</a>, <a href="https://www.amazon.com/High-Growth-Handbook-Elad-Gil/dp/1732265100" target="_blank">Book</a>)</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div></div><div class="fe-block fe-block-yui_3_17_2_1_1710264938662_22471" style="mix-blend-mode: normal;"><div class="sqs-block html-block sqs-block-html" data-blend-mode="NORMAL" data-block-type="2" data-border-radii="{&quot;topLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;topRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0}}" id="block-yui_3_17_2_1_1710264938662_22471"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h2 style="white-space:pre-wrap;">Elad Gil</h2>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div></div><div class="fe-block fe-block-yui_3_17_2_1_1710264938662_35486" style="mix-blend-mode: normal;"><div class="sqs-block html-block sqs-block-html" data-blend-mode="NORMAL" data-block-type="2" data-border-radii="{&quot;topLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;topRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0}}" id="block-yui_3_17_2_1_1710264938662_35486"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <p class="" style="white-space:pre-wrap;"><strong>Technology entrepreneur, investor, &amp; future forward optimist</strong></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div></div><div class="fe-block fe-block-85310ae98915ed0d751e" style="mix-blend-mode: normal;"><div class="sqs-block html-block sqs-block-html" data-blend-mode="NORMAL" data-block-type="2" data-border-radii="{&quot;topLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;topRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0}}" id="block-85310ae98915ed0d751e"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <p class="sqsrte-small" style="white-space:pre-wrap;"><em>I have been working on a series of investments, incubations, and operating companies focused on the technology future.</em></p><p class="sqsrte-small" style="white-space:pre-wrap;"><strong>Entrepreneurship &amp; running companies.</strong></p><ul data-rte-list="default"><li><p class="sqsrte-small" style="white-space:pre-wrap;">Started two companies (Mixerlabs - bought by Twitter - and Color Health)</p></li><li><p class="sqsrte-small" style="white-space:pre-wrap;">Recently incubated / helped start <a href="https://braintrustdata.com" target="_blank">Braintrust</a>, an AI eval (and more!) company</p></li><li><p class="sqsrte-small" style="white-space:pre-wrap;">Was a VP at Twitter (which bought a startup where I was CEO) and worked on AI &amp; mobile at Google</p></li></ul><p class="sqsrte-small" style="white-space:pre-wrap;">I also wrote the best-selling <a href="https://www.amazon.com/High-Growth-Handbook-Elad-Gil/dp/1732265100" target="_blank"><strong>High Growth Handbook</strong></a> - tactical advice for post-product market fit companies (hiring, product, M&amp;A, sales, HR issues, fundraises etc). You can buy the book on <a href="https://www.amazon.com/High-Growth-Handbook-Elad-Gil/dp/1732265100" target="_blank">Amazon</a> or read for <a href="https://growth.eladgil.com/book/introduction/welcome-to-the-high-growth-handbook/" target="_blank">free online</a></p><p class="sqsrte-small" style="white-space:pre-wrap;"><strong>Investing</strong>. Past investments include:&nbsp;</p><ul data-rte-list="default"><li><p class="sqsrte-small" style="white-space:pre-wrap;">Airbnb, Airtable, Anduril, Applied Intuition, Brex, Checkr, Coinbase, dbt Labs, Deel, Figma, Flexport, Gitlab, Gusto, Instacart, Navan, Notion, Opendoor, PagerDuty, Pinterest, Retool, Rippling, Samsara, Square, Stripe etc</p></li></ul><p class="sqsrte-small" style="white-space:pre-wrap;"><strong>AI.</strong> I got involved with ML &amp; generative AI early.</p><ul data-rte-list="default"><li><p class="sqsrte-small" style="white-space:pre-wrap;">I invested early in, or led rounds for e.g. <a href="https://www.braintrustdata.com/" target="_blank">Braintrust</a>, Character, Decagon, <a href="https://www.harvey.ai/blog/series-b" target="_blank">Harvey</a>, Mistral, <a href="https://www.perplexity.ai/" target="_blank">Perplexity</a>, Pika, and others</p></li><li><p class="sqsrte-small" style="white-space:pre-wrap;">I prior ran AI centric product orgs at Google &amp; Twitter </p></li><li><p class="sqsrte-small" style="white-space:pre-wrap;">I have an AI podcast named <a href="https://www.youtube.com/playlist?list=PLMKa0PxGwad7jf8hwwX8w5FHitXZ1L_h1" target="_blank">No Priors</a></p></li></ul><p class="sqsrte-small" style="white-space:pre-wrap;"><strong>Longevity. </strong>I have degrees in Math and Biology (including a PhD from MIT) and have seen existence proofs of <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3001308/" target="_blank">life extension in organisms due to gene knockouts</a></p><ul data-rte-list="default"><li><p class="sqsrte-small" style="white-space:pre-wrap;">I personally identified a <a href="https://pubmed.ncbi.nlm.nih.gov/10077613/" target="_blank">gene involved in lifespan</a></p></li><li><p class="sqsrte-small" style="white-space:pre-wrap;">I have also funded a clinical trial at Stanford on aging (it didnt work! DOH! Happy to try again)</p></li><li><p class="sqsrte-small" style="white-space:pre-wrap;"><strong> </strong>Involved with anti-aging biotech companies (<a href="https://bioagelabs.com/" target="_blank">BioAge</a> and <a href="https://www.newlimit.com/" target="_blank">NewLimit</a>). BioAge now has an interesting drug for <a href="https://www.clinicaltrialsarena.com/news/bioage-labs-muscle-atrophy/" target="_blank">muscle</a></p></li></ul><p class="sqsrte-small" style="white-space:pre-wrap;"><strong>Beauty &amp; inspiration. </strong>Thinking about society-level beauty and inspirations at Monumental (coming soon!). Why don’t we build massive inspiring monuments and art projects anymore that can inspire people to do amazing things? Belief in progress is reflective.</p><p class="sqsrte-small" style="white-space:pre-wrap;"><strong>Human capital movements.</strong> The drain from key parts of society of smart, young, high conviction people is starting to show its impact. Am interested in projects to encourage really smart people to work in societally important fields which currently lack smart people.</p><p class="sqsrte-small" style="white-space:pre-wrap;"><strong>Projects I need help with:</strong> Monumental (coming soon!), a chain of new K-12 schools inspired by ancient Greece, two new foundation models I want to exist.</p><p class="sqsrte-small" style="white-space:pre-wrap;"><strong>Where you can find me.</strong> <a href="https://twitter.com/eladgil" target="_blank">Twitter</a>, <a href="https://blog.eladgil.com/" target="_blank">Writings</a>, <a href="https://growth.eladgil.com/" target="_blank">Book</a></p><p class="sqsrte-small" style="white-space:pre-wrap;"><strong>Media assets.</strong> Download an official headshot of me <a href="https://twitter.com/eladgil/photo" target="_blank">here</a></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div></div></div></div>
+    </div>
+  
+  </div>
+  
+</section>
+
+  
+</article>
