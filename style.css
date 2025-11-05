@@ -1,0 +1,31 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #0a0a0a;
+    color: #ffff;
+}
+
+#contents {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #0a0a0a;
+    color: #ffff;
+}
+
+.code {
+    color: #339;
+    background-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9em;
+    padding-left: 40px;
+}
+
+ul li {
+    margin-top: 4px;
+}

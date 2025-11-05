@@ -1,8 +1,5 @@
-# spanktank-website
-## PERSONAL WEBSITE
- ### *USEENSPANKTANK BLOG*
+# Spencer Kenyon Website
 
-*ALL RIGHTS RESERVED TO USEENSPANKTANK*
-
-
-creative rights to https://eladgil.com/
+inspired by:
+https://eladgil.com/
+https://gregbrockman.com/
