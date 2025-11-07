@@ -1,31 +1,115 @@
-body {
-    padding: 0;
+* {
     margin: 0;
-    background: #0a0a0a;
-    color: #ffff;
-}
+    padding: 0;
+    box-sizing: border-box;
+    }
 
-#contents {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: #0a0a0a;
-    color: #ffff;
-}
+    body {
+        background-color: #ffffff;
+        color: #333333;
+        font-family: Georgia, 'Times New Roman', serif;
+        line-height: 1.6;
+        padding: 40px 20px;
+    }
 
-.code {
-    color: #339;
-    background-color: transparent;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 0.9em;
-    padding-left: 40px;
-}
+    #contents {
+        max-width: 700px;
+        margin: 0 auto;
+    }
 
-ul li {
-    margin-top: 4px;
-}
+    #Lincoln {
+        max-width: 100%;
+        height: auto;
+        margin-top: 15px;
+        border-radius: 4px;
+        object-fit: contain;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        font-weight: normal;
+        color: #000000;
+        margin-bottom: 0px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+        font-weight: bold;
+        color: #000000;
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #000000;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        font-size: 0.7em;
+        font-weight: thin;
+        color: #000000;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: #555555;
+        margin-bottom: 15px;
+        font-size: 1em;
+    }
+
+    a {
+        color: #0066cc;
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: #004499;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    ul li {
+        margin-bottom: 20px;
+    }
+
+    ul li a {
+        font-weight: bold;
+        font-size: 1.05em;
+    }
+
+    ul li p {
+        margin-top: 5px;
+        margin-left: 0;
+    }
+
+    .intro {
+        font-style: italic;
+        color: #666666;
+        margin-bottom: 30px;
+    }
+
+    .footer {
+        font-size: 24px;
+        font-weight: bold;
+        color: #000000;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    @media (max-width: 600px) {
+        body {
+            padding: 20px 15px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+    }
