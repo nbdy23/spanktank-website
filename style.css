@@ -63,12 +63,12 @@
     }
 
     a {
-        color: #0066cc;
+        color: #292929;
         text-decoration: underline;
     }
 
     a:hover {
-        color: #004499;
+        color: #292929;
     }
 
     ul {
