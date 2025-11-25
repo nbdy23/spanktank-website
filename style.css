@@ -7,9 +7,10 @@
     body {
         background-color: #ffffff;
         color: #333333;
-        font-family: Georgia, 'Times New Roman', serif;
+        font-family: 'freight-sans-pro', 'helvetica neue', Arial, Helvetica, sans-serif;
         line-height: 1.6;
-        padding: 40px 20px;
+        padding: 60px 20px;
+        font-size: 14px;
     }
 
     #contents {
@@ -17,49 +18,57 @@
         margin: 0 auto;
     }
 
-    #Lincoln {
-        max-width: 100%;
-        height: auto;
-        margin-top: 15px;
-        border-radius: 4px;
-        object-fit: contain;
-    }
-
     h1 {
-        font-size: 2.5em;
-        font-weight: normal;
+        font-size: 24px;
+        font-weight: 700;
         color: #000000;
-        margin-bottom: 0px;
+        margin-bottom: 8px;
+        letter-spacing: -0.02em;
     }
 
     h2 {
-        font-size: 1.3em;
-        font-weight: bold;
+        font-size: 14px;
+        font-weight: 700;
         color: #000000;
         margin-top: 40px;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
     }
 
     h3 {
-        font-size: 1.1em;
-        font-weight: bold;
+        font-size: 14px;
+        font-weight: 400;
         color: #000000;
         margin-top: 30px;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
     }
 
     h4 {
-        font-size: 0.7em;
-        font-weight: thin;
+        font-size: 11px;
+        font-weight: 400;
         color: #000000;
-        margin-top: 0px;
-        margin-bottom: 10px;
+        margin-top: 6px;
+        margin-bottom: 12px;
     }
 
     p {
         color: #555555;
-        margin-bottom: 15px;
-        font-size: 1em;
+        margin-bottom: 12px;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    p.intro {
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    p.small {
+        font-size: 11px;
+        font-style: italic;
+        color: #000000;
+        line-height: 1.5;
+        margin-bottom: 20px;
     }
 
     a {
@@ -74,42 +83,60 @@
     ul {
         list-style: none;
         padding: 0;
+        margin-bottom: 20px;
     }
 
     ul li {
+        margin-bottom: 8px;
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    ul li::before {
+        content: "• ";
+        margin-right: 4px;
+    }
+    
+    #Lincoln {
+        max-width: 100%;
+        height: auto;
+        margin-top: 12px;
         margin-bottom: 20px;
+        display: block;
     }
 
-    ul li a {
-        font-weight: bold;
-        font-size: 1.05em;
+    .project-link {
+        font-size: 11px;
+        display: block;
+        margin-bottom: 4px;
     }
 
-    ul li p {
-        margin-top: 5px;
+    .project-description {
+        font-size: 11px;
+        color: #000000;
         margin-left: 0;
+        margin-bottom: 14px;
     }
 
-    .intro {
-        font-style: italic;
-        color: #666666;
-        margin-bottom: 30px;
+    .contact-section {
+        margin-top: 40px;
+        font-size: 11px;
     }
 
     .footer {
-        font-size: 24px;
-        font-weight: bold;
+        font-size: 11px;
+        font-weight: 400;
         color: #000000;
-        margin-bottom: 20px;
+        margin-top: 60px;
         text-align: center;
     }
 
     @media (max-width: 600px) {
         body {
-            padding: 20px 15px;
+            padding: 40px 20px;
         }
 
         h1 {
-            font-size: 2em;
+            font-size: 20px;
         }
     }
