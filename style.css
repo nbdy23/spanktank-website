@@ -395,7 +395,7 @@ ul, ol {
 
 .scroll-word {
     font-family: var(--font-display);
-    font-size: clamp(3rem, 15vw, 10rem);
+    font-size: clamp(3rem, 13vw, 10rem);
     line-height: 1;
     color: var(--color-white);
     opacity: 0;

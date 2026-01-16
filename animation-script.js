@@ -1,9 +1,7 @@
 (function() {
     'use strict';
 
-    // ============================================
     // DOM ELEMENTS
-    // ============================================
     const nav = document.getElementById('nav');
     const menuToggle = document.getElementById('menuToggle');
     const menuOverlay = document.getElementById('menuOverlay');
@@ -22,9 +20,7 @@
     const bentoPrev = document.getElementById('bentoPrev');
     const bentoNext = document.getElementById('bentoNext');
 
-    // ============================================
     // STATE
-    // ============================================
     let isMenuOpen = false;
     let isVideoPlaying = false;
     let isMuted = true;
@@ -32,13 +28,9 @@
     let lastScrollY = 0;
     let ticking = false;
 
-    // ============================================
-    // UTILITY FUNCTIONS
-    // ============================================
-    
-    /**
-     * Debounce function for performance
-     */
+
+    // UTILITY FUNCTIONS 
+    /* Debounce function for performance */
     function debounce(func, wait) {
         let timeout;
         return function executedFunction(...args) {
@@ -51,9 +43,7 @@
         };
     }
 
-    /**
-     * Throttle function using RAF
-     */
+    /* Throttle function using RAF */
     function throttleRAF(callback) {
         return function() {
             if (!ticking) {
@@ -66,9 +56,7 @@
         };
     }
 
-    /**
-     * Get element's position relative to viewport
-     */
+    /* Get element's position relative to viewport */
     function getElementProgress(element) {
         const rect = element.getBoundingClientRect();
         const windowHeight = window.innerHeight;
@@ -82,9 +70,7 @@
         return 1 - (current - end) / (start - end);
     }
 
-    /**
-     * Check if element is in viewport
-     */
+    /* Check if element is in viewport */
     function isInViewport(element, threshold = 0) {
         const rect = element.getBoundingClientRect();
         return (
@@ -93,13 +79,9 @@
         );
     }
 
-    // ============================================
+
     // NAVIGATION
-    // ============================================
-    
-    /**
-     * Handle scroll effects on navigation
-     */
+    /* Handle scroll effects on navigation */
     function handleNavScroll() {
         const scrollY = window.scrollY;
         
@@ -113,9 +95,7 @@
         lastScrollY = scrollY;
     }
 
-    /**
-     * Toggle mobile menu
-     */
+    /* Toggle mobile menu */
     function toggleMenu() {
         isMenuOpen = !isMenuOpen;
         nav.classList.toggle('menu-open', isMenuOpen);
@@ -125,9 +105,7 @@
         document.body.style.overflow = isMenuOpen ? 'hidden' : '';
     }
 
-    /**
-     * Close menu
-     */
+    /* Close menu */
     function closeMenu() {
         if (isMenuOpen) {
             isMenuOpen = false;
@@ -137,13 +115,7 @@
         }
     }
 
-    // ============================================
-    // SCROLL TEXT ANIMATION (Terminal Industries Style)
-    // ============================================
-    
-    /**
-     * Animate scroll text words based on scroll position
-     */
+    // SCROLL TEXT ANIMATION (Terminal Industries Style) 
     function animateScrollText() {
         if (!scrollTextSection) return;
         
@@ -170,13 +142,8 @@
         });
     }
 
-    // ============================================
-    // VIDEO CONTROLS
-    // ============================================
-    
-    /**
-     * Initialize video
-     */
+    // VIDEO CONTROLS 
+    /** Init video */
     function initVideo() {
         if (!featuredVideo) return;
         
@@ -197,9 +164,7 @@
         }
     }
 
-    /**
-     * Toggle video mute
-     */
+    /** Toggle video mute */
     function toggleMute() {
         if (!featuredVideo) return;
         
@@ -208,9 +173,7 @@
         muteBtn.classList.toggle('unmuted', !isMuted);
     }
 
-    /**
-     * Handle video scroll - pause/play based on visibility
-     */
+    /** Handle video scroll - pause/play based on visibility */
     function handleVideoScroll() {
         if (!featuredVideo || !videoSection) return;
         
@@ -226,24 +189,17 @@
         }
     }
 
-    // ============================================
-    // BENTO CAROUSEL
-    // ============================================
-    
-    /**
-     * Initialize carousel
-     */
+    // BENTO CAROUSEL 
+    /** Init carousel */
     function initCarousel() {
         if (!bentoCarousel || !bentoTrack) return;
         
-        // For desktop, carousel scrolls horizontally if needed
-        // For mobile, it's a vertical stack
+        // For desktop, carousel scrolls horz
+        // For mobile, vert stack
         updateCarouselNav();
     }
 
-    /**
-     * Update carousel navigation visibility
-     */
+    /** Update carousel navigation visibility */
     function updateCarouselNav() {
         if (!bentoTrack || !bentoPrev || !bentoNext) return;
         
@@ -284,13 +240,9 @@
             behavior: 'smooth'
         });
     }
-
-    // ============================================
-    // INTERSECTION OBSERVER FOR REVEAL ANIMATIONS
-    // ============================================
-    
+ 
     /**
-     * Initialize reveal animations
+     * Init animations
      */
     function initRevealAnimations() {
         const revealElements = document.querySelectorAll(
@@ -323,20 +275,13 @@
         revealElements.forEach(el => revealObserver.observe(el));
     }
 
-    // ============================================
     // MAIN SCROLL HANDLER
-    // ============================================
-    
     function onScroll() {
         handleNavScroll();
         animateScrollText();
         handleVideoScroll();
     }
 
-    // ============================================
-    // EVENT LISTENERS
-    // ============================================
-    
     function initEventListeners() {
         // Scroll events (throttled)
         window.addEventListener('scroll', throttleRAF(onScroll), { passive: true });
@@ -377,10 +322,8 @@
         }
     }
 
-    // ============================================
+
     // INITIALIZATION
-    // ============================================
-    
     function init() {
         // Remove loading state
         document.body.classList.remove('loading');
@@ -404,10 +347,8 @@
         init();
     }
 
-    // ============================================
+
     // SMOOTH SCROLL FOR ANCHOR LINKS
-    // ============================================
-    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const targetId = this.getAttribute('href');
@@ -426,10 +367,7 @@
         });
     });
 
-    // ============================================
     // PRELOAD CRITICAL IMAGES
-    // ============================================
-    
     function preloadImage(src) {
         return new Promise((resolve, reject) => {
             const img = new Image();
