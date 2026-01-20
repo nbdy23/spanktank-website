@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# sitemap location
+sitemap: https://spencerkenyon.com/sitemap.xml
