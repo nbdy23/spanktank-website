@@ -1,0 +1,35 @@
+{
+  "name": "spencer-kenyon-website",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Spencer Kenyon personal website",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "react",
+    "threejs",
+    "portfolio"
+  ],
+  "author": "Spencer Kenyon",
+  "license": "ISC",
+  "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
+    "@tailwindcss/postcss": "^4.1.18",
+    "framer-motion": "^12.27.5",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-router-dom": "^7.12.0",
+    "three": "^0.182.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "vite": "^7.3.1"
+  }
+}
